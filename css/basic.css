@@ -84,6 +84,7 @@ section {
 	font-weight: 300;
 	font-size: 2.5em;
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	max-width: 20em;
 }
 .text .intro p.action {
 	font-size: 1.25em;
@@ -97,12 +98,6 @@ section {
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
     padding: 5%;
 }
-
-img, #details-video{
-    display: inline-block;
-    float: right;
-}
-
 
 
 /* =Header
@@ -150,7 +145,11 @@ img, #details-video{
 
 /* =Footer
 ----------------------------------------------- */
+.home + .footer {
+	margin-top: 0;
+}
 .footer {
+	margin-top: 3em;
 	background: rgb(234, 148, 47);
 	color: white;
 	padding: 2em;
@@ -291,6 +290,25 @@ p.img-description{
 	font-weight: 300;
 	text-transform: none;
 	color: rgb(67, 113, 163);
+}
+.about .stories {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.about .stories ul,
+.about .stories li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.about .stories ul:after {
+	/* @clearfix */
+	content: "";
+	display: table;
+	clear: both;
+}
+.about .stories li {
+	float: left;
 }
 
 
