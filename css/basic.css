@@ -25,6 +25,16 @@ p {
 	font-style: italic;
 }
 
+nav ul,
+nav li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+nav li {
+	display: inline;
+	margin-right: 1.5em;
+}
 
 .explore,
 .explore li {
