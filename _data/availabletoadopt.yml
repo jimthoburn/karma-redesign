@@ -93,3 +93,39 @@
   activity: Active
   training: House
   image: sadie1.jpg
+
+- name: Lucy
+  breed: Mix
+  size: Small
+  kids: false
+  gender: Female
+  age: Adult
+  age_detail: 2 year old
+  description: I'm a loving, sweet girl who loves the camera. I have a budding modeling career and am looking for a great talent manager!
+  activity: Active
+  training: House
+  image: roxy_real.jpg
+
+- name: Rover
+  breed: Maltese
+  size: Large
+  kids: false
+  gender: Male
+  age: Young
+  age_detail: 2 year old
+  description: I love activities such as going for a hike, car rides and trips to the beach. I have the best house manners and I am a pro at being trained!
+  activity: Active
+  training: House
+  image: nala_real.jpg
+
+- name: Hugo
+  breed: Pit
+  size: Small
+  kids: False
+  gender: Feml
+  age: Adult
+  age_detail: 5 year old
+  description: I'm a pretty small guy but 100% of me is pure love!
+  activity: Active
+  training: House
+  image: dante_real.jpg
