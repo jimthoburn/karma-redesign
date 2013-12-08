@@ -199,6 +199,22 @@ section {
 	opacity: 0;
 }
 
+.img-description{
+	opacity: 0;
+	transition: opacity 0.2s;
+	display: block;
+}
+
+li:hover p.img-description{
+	opacity: 1;
+}
+
+p.img-description{
+	font: 100%/1.5 Georgia, Times, "Times New Roman", serif; /* @georgia */
+	text-transform: lowercase ;
+    font-weight: normal;
+}
+
 
 /* =About
 ----------------------------------------------- */
