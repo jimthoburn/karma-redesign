@@ -84,18 +84,20 @@ section {
 	font-weight: 300;
 	font-size: 2.5em;
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	max-width: 20em;
 }
 .text .intro p.action {
 	font-size: 1.25em;
 }
 
 #foster-program-details {
-	font-weight: 300;
-	font-size: 2.0em;
+    display: inline-block;
+    float: left;
+	font-weight: 200;
+	font-size: 1.5em;
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
     padding: 5%;
 }
-
 
 
 /* =Header
@@ -138,6 +140,57 @@ section {
 	.header h2 {
 		margin-right: 3em;
 	}
+}
+
+
+/* =Footer
+----------------------------------------------- */
+.home + .footer {
+	margin-top: 0;
+}
+.footer {
+	margin-top: 3em;
+	background: rgb(234, 148, 47);
+	color: white;
+	padding: 2em;
+	margin-left: -2em;
+	margin-right: -2em;
+	margin-bottom: -2em;
+}
+.footer ul,
+.footer li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.footer li {
+	display: inline;
+	margin-right: 3em;
+}
+.footer .secondary li {
+	margin-right: 2em;
+}
+.footer .primary li {
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	text-transform: uppercase;
+}
+.footer .primary {
+	margin-top: 0;
+}
+.footer .secondary {
+	margin-bottom: 0;
+	font-size: 0.8em;
+}
+.footer h2 {
+	margin: 0 3em 0 0;
+	float: left;
+}
+.footer h2 img {
+	vertical-align: top;
+}
+.footer a {
+	color: inherit;
+	text-decoration: none;
 }
 
 
@@ -231,11 +284,31 @@ p.img-description{
 
 /* =About
 ----------------------------------------------- */
+.home h1,
 .about.text h1 {
 	font-size: 3em;
 	font-weight: 300;
 	text-transform: none;
 	color: rgb(67, 113, 163);
+}
+.about .stories {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.about .stories ul,
+.about .stories li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.about .stories ul:after {
+	/* @clearfix */
+	content: "";
+	display: table;
+	clear: both;
+}
+.about .stories li {
+	float: left;
 }
 
 
@@ -244,14 +317,138 @@ p.img-description{
 #details-video {
     display: block;
     margin: auto;
+    margin-right: 4.35em;
 }
+
+
+/* =Home
+----------------------------------------------- */
+.home .intro {
+	margin-left: -2em;
+	margin-top: -2em;
+	margin-right: -2em;
+}
+.home .features {
+	margin-top: 4em;
+	margin-left: -2em;
+	margin-right: -2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	background-color: rgb(226, 225, 221);
+}
+.home .features .start {
+	position: relative;
+	top: -2.25em;
+}
+.home .start,
+.home .start li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.home .start,
+.home .main-content {
+	max-width: 1170px; /* The width of the image */
+}
+.home .start li {
+	display: inline-block;
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	text-align: center;
+}
+.home .start li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: inherit;
+}
+.home .start li a img {
+	margin-top: 0.75em;
+}
+.home .start li.adopt img {
+	border-top: 10px solid rgb(47, 75, 135); /* @blueberry */
+}
+.home .start li.volunteer img {
+	border-top: 10px solid rgb(207, 67, 41); /* @strawberry */
+}
+.home .start li.donate img {
+	border-top: 10px solid rgb(110, 181, 62); /* @lime */
+}
+.home .start li.explore img {
+	border-top: 10px solid rgb(235, 148, 47); /* @tangerine */
+}
+.home .organizations {
+	margin-top: 3em;
+}
+.home .organizations h2 {
+	font-weight: normal;
+}
+.home .organizations ul {
+	margin: 3em 0;
+}
+.home .organizations ul,
+.home .organizations li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.home .organizations li {
+	display: inline;
+	margin-right: 2.5em;
+}
+
+
 
 .details-col-left, .details-col-right{
     display: table-cell;
     padding:5px;
 }
- p, h1{}
+
+volunteer{
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	background-color: rgb(235, 148, 47); /* @link-color */
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.35em 5.65em;
+    margin-left: 20%;
+}
+
+finance{
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	background-color: rgb(235, 148, 47); /* @link-color */
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+    margin: auto;
+	padding: 0.35em 5.65em;
+}
 
 /* =Adopt
 * -------------------------------------------------*/
 
+<<<<<<< HEAD
+=======
+.adopt-search fieldset
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+	width: 200px;
+	background-color: #f5f5f5;
+}
+
+.adopt-search fieldset ul
+{
+	margin:0;
+}
+
+.adopt-search fieldset ul li
+{
+	list-style-type:none;
+}
+>>>>>>> de481b6653cd5938280c41d421d4c058d5f81a46
