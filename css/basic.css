@@ -52,6 +52,7 @@ dd {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+    text-transform: uppercase;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -214,8 +215,8 @@ li:hover p.img-description{
 }
 
 p.img-description{
+    text-transform: none;
 	font: 100%/1.5 Georgia, Times, "Times New Roman", serif; /* @georgia */
-	text-transform: lowercase ;
     font-weight: normal;
 }
 
@@ -230,4 +231,9 @@ p.img-description{
 }
 
 
-
+/* =Details
+ * -----------------------------------------------*/
+#details-video {
+    display: block;
+    margin: auto;
+}
