@@ -1,116 +1,95 @@
-- name: Sparky
-  breed: Terrier
-  size: Small
-  kids: true
-  gender: Male
-  age: Puppy
-  activity: Sedentary
-  training: House
-
-- name: Fluffy
-  breed: Poodle
+- name: Chloe
+  breed: Mix
   size: Small
   kids: true
   gender: Female
+  age: Adult
+  age_detail: 3 year old
+  description: This is our new little boy Biscuit. He is 3 years old and as big as a bowl of soup! He is the sweetest little guy!
+  activity: Sedentary
+  training: House
+  image: chloe_real.jpg
+
+- name: Danny
+  breed: Maltese Mix
+  size: Small
+  kids: true
+  gender: Male
   age: Puppy
+  age_detail: 10 month old
+  description: I'm a little shy at first but once you get to know me I really come out of my shell.
   activity: Active
   training: Crate
+  image: danny_real.jpg
 
-- name: Mr. Bigglesworth
-  breed: Bloodhound
-  size: Medium
-  kids: false
-  gender: Male
-  age: Young
-  activity: Active
-  training: House
-
-- name: John Wilkes Booth
-  breed: Terrier
+- name: Dante
+  breed: Retriever Mix
   size: Large
-  kids: false
-  gender: Female
+  kids: true
+  gender: Male
   age: Senior
-  activity: Sedentary
+  age_detail: 10 year old
+  description: I'm a pretty big guy but 90% of me is pure love! The other 10% is my gorgeous looks.
+  activity: Active
   training: House
+  image: dante_real.jpg
 
-- name: Bob
-  breed: Terrier
-  size: Small
-  kids: true
-  gender: Male
-  age: Adult
-  activity: Active
-  training: Crate
-
-- name: Stuffy
-  breed: Poodle
-  size: Small
-  kids: true
-  gender: Female
-  age: Puppy
-  activity: Active
-  training: Crate
-
-- name: Mrs. Bigglesworth
-  breed: Corgi
-  size: Medium
+- name: Devi
+  breed: Boxer Mix
+  size: Large
   kids: true
   gender: Female
   age: Adult
-  activity: Sedentary
-  training: House
-
-- name: Abraham Lincoln
-  breed: Terrier
-  size: Medium
-  kids: true
-  gender: Male
-  age: Adult
+  age_detail: 3 year old
+  description: I am a happy go lucky girl who is smart and so eager to please that I learned all my training without needing treats!
   activity: Active
   training: House
+  image: devi_final.jpg
 
-- name: Alice
-  breed: English Bulldog
-  size: Small
-  kids: true
-  gender: Female
-  age: Young
-  activity: Sedentary
-  training: House
-
-- name: Bandit
-  breed: Dachsund
-  size: Small
-  kids: true
-  gender: Male
-  age: Adult
-  activity: Sedentary
-  training: Crate
-
-- name: Bonnie
+- name: Nala
   breed: Pit Bull
   size: Large
   kids: false
   gender: Female
-  age: Young
+  age: Adult
+  age_detail: 4 year old
+  description: I love activities such as going for a hike, car rides and trips to the beach. I have the best house manners and I am a pro at being trained!
   activity: Active
   training: House
+  image: nala_real.jpg
 
-- name: Freddy
-  breed: English Terrier
+- name: Noah
+  breed: Pit Bull
+  size: XL
+  kids: false
+  gender: Male
+  age: Adult
+  age_detail: 6 year old
+  description: I was rescued from the shelter by Karma Rescue because they could not pass up a big softie. I'm great on the leash and I make friends easily.
+  activity: Active
+  training: House
+  image: noah_real.jpg
+
+- name: Roxy
+  breed: Mix
   size: Medium
   kids: true
-  gender: Male
+  gender: Female
   age: Young
-  activity: Sedentary
+  age_detail: 2 year old
+  description: I'm a sweet, beautiful girl who loves the camera. I have a budding modeling career and am looking for a great talent manager!
+  activity: Active
   training: House
+  image: roxy_real.jpg
 
-- name: Ol' Bill
-  breed: Poodle
-  size: Small
+- name: Sadie
+  breed: Mix
+  size: Medium
   kids: true
-  gender: Male
-  age: Senior
-  activity: Sedentary
+  gender: Female
+  age: Young
+  age_detail: 2 year old
+  description: I love long walks on the beach, and if I weren't a dog, chocolate too! I've got a big appetite and a bigger heart!
+  activity: Active
   training: House
+  image: sadie1.jpg
