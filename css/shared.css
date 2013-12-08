@@ -8,12 +8,13 @@ body {
 }
 
 a {
-	color: rgb(110, 160, 26); /* @link-color */
+	color: #FFFFFF; /* @link-color */
 	text-decoration: none;
 }
 a:hover,
 a:active,
 a:focus {
+	color: #FFFFFF;
 	text-decoration: underline;
 }
 
@@ -44,35 +45,82 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    float:left;
 }
 
 dt{
     font-weight: bold;
 }
 
-#footer{
-    /* - Grey Background
-     * - Yellow Line to separate between different fields */
-    background-color: #4D4D4D repeat top left;
-    padding: 100px;
-    display: block;
-}
-
 /* Main Home Page definitions
  * Show a large image on top of the main page */
 .home-main-img{
-    display: block;
     margin-right: auto;
     margin-left: auto;
-    padding: 100px;
     background-color: #D0D0D0;
 }
 
 /* Content has to contain text font vienna jordan
  * Have images within to show other org. logos */
 .home-content{
-    text-font:
+    
 }
+
+.main-content, .main-content-left, .main-content-right{
+	float: left;
+	display: inline-block;
+	padding: 10px;
+}
+
+.org-columns div{
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+}
+
+#adopt, #volunteer, #donate, #explore{
+	text-align: center;	
+	margin-left: 10px;
+}
+
+
+.organizations img{
+	display: block;
+	float: left;
+	margin-left: 90px;
+	background-color: #D0D0D0;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+.footer, .footer-col-1, a{
+	margin-top: 0px;
+	width: auto;
+	padding: 20px;
+	background-color: #ea942f;
+	display: inline-block;
+}
+
+.footer, .footer-col-1, .img{
+	float: left;
+}
+
+.footer{
+	margin-top: 50px;
+	float: none;
+}
+
+.footer:after {
+	/* @clear-fix */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
 
 /* Background image will be provided being a dark grey background with a
  * yellow border and have at least 2 or 3 columns */
