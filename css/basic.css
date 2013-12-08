@@ -214,8 +214,8 @@ li:hover p.img-description{
 }
 
 p.img-description{
+    text-transform: none;
 	font: 100%/1.5 Georgia, Times, "Times New Roman", serif; /* @georgia */
-	text-transform: lowercase ;
     font-weight: normal;
 }
 
@@ -230,4 +230,9 @@ p.img-description{
 }
 
 
-
+/* =Details
+ * -----------------------------------------------*/
+#details-video {
+    display: block;
+    margin: auto;
+}
