@@ -187,6 +187,10 @@ section {
 }
 .explore li.strawberry a {
 	background: rgb(207, 67, 41); /* @strawberry */
+
+}
+.explore li.blueberry a {
+	background: rgb(47, 75, 135); /* @blueberry */
 }
 .explore li img {
 	opacity: 0.2;
