@@ -1,50 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
-    <script type="text/javascript" src="karma-redesign/js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="karma-redesign/js/shared.js"></script>
-	<link rel="stylesheet" href="karma-redesign/css/shared.css"/>
-</head>
-<body>
-	<div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/adopt">Adopt</a></li>
-      			<li><a href="/donate">Donate</a></li>
-          </ul>		  
-    		  <ul class="nav navbar-nav navbar-right">
-            <li><a href="/learn">Learn</a></li>
-      			<li><a href="/volunteer">Volunteer</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    <div class="container">
-        <div id="body">		
-            {{ content }}
-			{{ page.my_variable }}
-        </div>
-    </div>
-
-    {% if site.github %}
-    <a href="http://github.com/{{ site.github.username }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-    {% endif %}
-</body>
+  <head>
+      <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+      {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+      {% endif %}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+      <script type="text/javascript" src="/karma-redesign/js/jquery.isotope.min.js"></script>
+      <script type="text/javascript" src="/karma-redesign/js/shared.js"></script>
+  	  <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" />
+      <link type="text/css" rel="stylesheet" href="/karma-redesign/css/basic.css" />
+      <link type="image/x-icon" rel="icon" href="/karma-redesign/assets/images/karma-favicon.png" />
+  </head>
+  <body>
+  	<header class="header">
+      <h2><a href="/karma-redesign/home.html"><img src="/karma-redesign/assets/images/shared/karma-rescue.png" width="130" alt="" /></a></h2>
+      <nav>
+        <ul>
+          <li><a href="/karma-redesign/adopt/">Adopt</a></li>
+          <li><a href="/karma-redesign/volunteer/">Volunteer</a></li>
+          <li><a href="/karma-redesign/donate/">Donate</a></li>
+          <li><a href="/karma-redesign/explore.html">Explore</a></li>
+          <li><a href="/karma-redesign/about/">About Us</a></li>
+        </ul>
+      </nav>
+    </header>    
+    {{ content }}
+  </body>
 </html>
