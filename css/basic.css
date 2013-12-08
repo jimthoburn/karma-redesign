@@ -133,6 +133,53 @@ section {
 }
 
 
+/* =Footer
+----------------------------------------------- */
+.footer {
+	background: rgb(234, 148, 47);
+	color: white;
+	padding: 2em;
+	margin-left: -2em;
+	margin-right: -2em;
+	margin-bottom: -2em;
+}
+.footer ul,
+.footer li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.footer li {
+	display: inline;
+	margin-right: 3em;
+}
+.footer .secondary li {
+	margin-right: 2em;
+}
+.footer .primary li {
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	text-transform: uppercase;
+}
+.footer .primary {
+	margin-top: 0;
+}
+.footer .secondary {
+	margin-bottom: 0;
+	font-size: 0.8em;
+}
+.footer h2 {
+	margin: 0 3em 0 0;
+	float: left;
+}
+.footer h2 img {
+	vertical-align: top;
+}
+.footer a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
 /* =Programs
 ----------------------------------------------- */
 .featured.program {
@@ -223,6 +270,7 @@ p.img-description{
 
 /* =About
 ----------------------------------------------- */
+.home h1,
 .about.text h1 {
 	font-size: 3em;
 	font-weight: 300;
@@ -237,3 +285,82 @@ p.img-description{
     display: block;
     margin: auto;
 }
+
+
+/* =Home
+----------------------------------------------- */
+.home .intro {
+	margin-left: -2em;
+	margin-top: -2em;
+	margin-right: -2em;
+}
+.home .features {
+	margin-top: 4em;
+	margin-left: -2em;
+	margin-right: -2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	background-color: rgb(226, 225, 221);
+}
+.home .features .start {
+	position: relative;
+	top: -2.25em;
+}
+.home .start,
+.home .start li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.home .start,
+.home .main-content {
+	max-width: 1170px; /* The width of the image */
+}
+.home .start li {
+	display: inline-block;
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	text-align: center;
+}
+.home .start li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: inherit;
+}
+.home .start li a img {
+	margin-top: 0.75em;
+}
+.home .start li.adopt img {
+	border-top: 10px solid rgb(47, 75, 135); /* @blueberry */
+}
+.home .start li.volunteer img {
+	border-top: 10px solid rgb(207, 67, 41); /* @strawberry */
+}
+.home .start li.donate img {
+	border-top: 10px solid rgb(110, 181, 62); /* @lime */
+}
+.home .start li.explore img {
+	border-top: 10px solid rgb(235, 148, 47); /* @tangerine */
+}
+.home .organizations {
+	margin-top: 3em;
+}
+.home .organizations h2 {
+	font-weight: normal;
+}
+.home .organizations ul {
+	margin: 3em 0;
+}
+.home .organizations ul,
+.home .organizations li {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.home .organizations li {
+	display: inline;
+	margin-right: 2.5em;
+}
+
+
+
