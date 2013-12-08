@@ -250,4 +250,27 @@ p.img-description{
     display: table-cell;
     padding:5px;
 }
- p, h1{}
+
+volunteer{
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	background-color: rgb(235, 148, 47); /* @link-color */
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.35em 5.65em;
+    margin-left: 20%;
+}
+
+finance{
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	background-color: rgb(235, 148, 47); /* @link-color */
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+    margin: auto;
+	padding: 0.35em 5.65em;
+}
