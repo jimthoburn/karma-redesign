@@ -1,0 +1,204 @@
+body {
+	font: 125%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 2em;
+	background: rgb(244, 245, 244);
+	color: rgb(0, 1, 0); /* @text-color */
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+	color: #FFFFFF; /* @link-color */
+	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.list button{
+    position: relative;
+    left: 140px;
+    bottom: 200px;
+}
+
+.content-module, .org-content, .volunteer-media{
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #C0C0C0;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+}
+
+dt{
+    font-weight: bold;
+}
+
+/* Main Home Page definitions
+ * Show a large image on top of the main page */
+.home-main-img{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #D0D0D0;
+}
+
+/* Content has to contain text font vienna jordan
+ * Have images within to show other org. logos */
+.home-content{
+    
+}
+
+.main-content, .main-content-left, .main-content-right{
+	float: left;
+	display: inline-block;
+	padding: 10px;
+}
+
+.org-columns div{
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+}
+
+#adopt, #volunteer, #donate, #explore{
+	text-align: center;	
+	margin-left: 10px;
+}
+
+
+.organizations img{
+	display: block;
+	float: left;
+	margin-left: 90px;
+	background-color: #D0D0D0;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+.footer, .footer-col-1, a{
+	margin-top: 0px;
+	width: auto;
+	padding: 20px;
+	background-color: #ea942f;
+	display: inline-block;
+}
+
+.footer, .footer-col-1, .img{
+	float: left;
+}
+
+.footer{
+	margin-top: 50px;
+	float: none;
+}
+
+.footer:after {
+	/* @clear-fix */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+/* Background image will be provided being a dark grey background with a
+ * yellow border and have at least 2 or 3 columns */
+/* Adopt Definitions */
+/* Volunteer Definitions */
+/* Donation Definitions */
+/* What were about Definitions */
+
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/**** Isotope filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.filter-list li{
+    list-style-type: none;
+}
