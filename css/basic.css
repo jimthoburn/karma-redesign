@@ -89,6 +89,14 @@ section {
 	font-size: 1.25em;
 }
 
+#foster-program-details {
+	font-weight: 300;
+	font-size: 2.0em;
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+    padding: 5%;
+}
+
+
 
 /* =Header
 ----------------------------------------------- */
@@ -236,4 +244,9 @@ p.img-description{
 #details-video {
     display: block;
     margin: auto;
+}
+
+.details-col-left, .details-col-right{
+    display: table-cell;
+    padding:5px;
 }
