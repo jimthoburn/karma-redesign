@@ -7,23 +7,43 @@
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-
+	
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/shared.css"/>
 </head>
 <body>
-    <div class="container">
-        <div id="header">
-            <a href="/"><h1>{{ site.title }}</h1></a>
+	<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <div id="body">
-            {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/adopt">Adopt</a></li>
+			<li><a href="/donate">Donate</a></li>
+          </ul>		  
+		  <ul class="nav navbar-nav navbar-right">
+            <li><a href="/learn">Learn</a></li>
+			<li><a href="/volunteer">Volunteer</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+        <div id="body">		
             {{ content }}
+			{{ page.my_variable }}
         </div>
     </div>
 
