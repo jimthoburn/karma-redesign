@@ -109,7 +109,7 @@
 - name: Rover
   breed: Maltese
   size: Large
-  kids: false
+  kids: true
   gender: Male
   age: Young
   age_detail: 2 year old
