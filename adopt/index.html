@@ -1,216 +1,102 @@
+---
+layout: master_default
+description: Karma Rescue - Adopt
+---
 
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
-	<meta charset="utf-8" />
-	<title>Sparky the Dog</title>
-	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" />
-	<link type="text/css" rel="stylesheet" href="/karma-redesign/css/basic.css" />
-	<link type="image/x-icon" rel="icon" href="/karma-redesign/assets/images/karma-favicon.png" />
-</head>
-<body>
-
-	<header class="header">
-		<h2><a href="/karma-redesign/home.html"><img src="/karma-redesign/assets/images/shared/karma-rescue.png" width="130" alt="" /></a></h2>
-		<nav>
-			<ul>
-				<li><a href="/karma-redesign/adopt/">Adopt</a></li>
-				<li><a href="/karma-redesign/volunteer/">Volunteer</a></li>
-				<li><a href="/karma-redesign/donate/">Donate</a></li>
-				<li><a href="/karma-redesign/explore.html">Explore</a></li>
-				<li><a href="/karma-redesign/about/">About Us</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<section class="text">
-
-		<img src="/karma-redesign/assets/images/pets/sparky.jpg" alt="" />
-
-		<form class="adopt-search" action="" method="get">
-			<fieldset>
-				<legend>Good With</legend>
-				<ul>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Kids</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Cats</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Dogs</span>
-						</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset>
-				<legend>Size</legend>
-				<ul>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Small</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Medium</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Large</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Extra Large</span>
-						</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset>
-				<legend>Gender</legend>
-				<ul>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Male</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Female</span>
-						</label>
-					</li>
-				</ul>
-			</fieldset>
-			<fieldset>
-				<legend>Size</legend>
-				<ul>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Puppy</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Young</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Large</span>
-						</label>
-					</li>
-					<li>
-						<label>
-							<input type="checkbox" />
-							<span>Extra Large</span>
-						</label>
-					</li>
-				</ul>
-			</fieldset>
-			<p>
-			<button type="submit">Go</button>
-			</p>
-		</form>
-
-		<ul class="list">
+<link rel="stylesheet" href="/karma-redesign/css/prettyPhoto.css"/>
+<link rel="stylesheet" href="/karma-redesign/css/adopt.css"/>
+<img src="/karma-redesign/assets/images/pets/sparky.jpg" alt="" />
+<div class="adopt-search form-filters">			
+	<div class="adopt-filter-group">
+		<h5>Good With</h5>
+		<ul class="filter-list" id="filters-kids">
 			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/chloe_real.jpg" width="200" height="200" alt="" />
-					<h2>Chloe 3 y.0. female mix</h2>
-					<p>This is our new little boy Biscuit. He is 3 years old and as big as a bowl of soup!  He is the sweetest little guy…</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
-			</li>
-
+				<input id="no-preference" type="checkbox" name="filter-goodwith" data-filter="*"/>
+			  	<label for="no-preference">No Preference</label></li>
 			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/danny_real.jpg" width="200" height="200" alt="" />
-					<h2>Danny 10 m.o. Maltese Mix</h2>
-					<p>I'm a little shy at first but once you get to know me I really come out of my shell.</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
+				<input id="good-with-kids" type="checkbox" name="filter-goodwith" data-filter=".kids"/>
+				<label for="good-with-kids">Good With Kids</label>
+			</li>  
+		  	<li>
+				<input id="good-with-cats" type="checkbox" name="filter-goodwith" data-filter=".cats"/>
+				<label for="good-with-cats">Good With Cats</label>
 			</li>
-		
 			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/dante_real.jpg" width="200" height="200" alt="" />
-					<h2>Dante 10 y.o. Retreiver Mix</h2>
-					<p>I'm a pretty big guy but 90% of me is pure love! The other 10% is my gorgeous looks.</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
+				<input id="good-with-dogs" type="checkbox" name="filter-goodwith" data-filter=".dogs"/>
+				<label for="good-with-dogs">Good With Dogs</label>
 			</li>
-		
-			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/devi_final.jpg" width="200" height="200" alt="" />
-					<h2>Devi 3 y.o. Boxer Mix</h2>
-					<p>I am a happy go lucky girl who is smart and so eager to please that I learned all my training without needing treats!</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
-			</li>
-	
-			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/nala_real.jpg" width="200" height="200" alt="" />
-					<h2>Nala 4 y.o. Female Pitt</h2>
-					<p>I love activities such as going for a hike, car rides and trips to the beach. I have the best house manners and I am a pro at being trained!</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
-			</li>
-
-			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/noah_real.jpg" width="200" height="200" alt="" />
-					<h2>Noah 6 y.o. Pitt Bull</h2>
-					<p>I was rescued from the shelter by Karma Rescue because they could not pass up a big softie. I'm great on the leash and I make friends easily.</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
-			</li>
-
-			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/roxy_real.jpg" width="200" height="200" alt="" />
-					<h2>Roxy 2 y.0. female mix</h2>
-					<p>DANNY TEXT</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
-			</li>
-
-			<li>
-				<a href="">
-					<img src="/karma-redesign/assets/images/pets/sadie1.jpg" width="200" height="200" alt="" />
-					<h2>Sadie 2 y.0. female mix</h2>
-					<p>DANNY TEXT</p>
-				</a>
-				<form action="" method="post"><button>Save</button></form>
-			</li>
-
-
-
-
-
 		</ul>
-
-	</section>
-
-</body>
-</html>
+		<div class="clearfix"></div>			
+	</div>
+	<div class="adopt-filter-group">
+		<h5>Size</h5>
+		<ul class="filter-list" id="filters-size">
+<!-- 			  <li><input id="all-sizes" type="checkbox" name="filter-size" data-filter="*"><label for="all-sizes">All</label></a></li>
+-->			  	<li>
+			 <input id="small-size" type="checkbox" name="filter-size" data-filter=".Small"/>
+			 <label for="small-size">Small</label>
+		 </li>
+		  <li>
+			  <input id="medium-size" type="checkbox" name="filter-size" data-filter=".Medium"/>
+			  <label for="medium-size">Medium</label>
+		  </li>
+		  <li>
+			  <input id="large-size" type="checkbox" name="filter-size" data-filter=".Large"/>
+			  <label for="large-size">Large</label>
+		  </li>
+		  <li>
+			  <input id="xl-size" type="checkbox" name="filter-size" data-filter=".XL"/>
+			  <label for="xl-size">XL</label>
+		  </li>
+		</ul>
+		<div class="clearfix"></div>			
+	</div>
+	<div class="adopt-filter-group">
+		<h5>Gender</h5>
+		<ul class="filter-list" id="filters-size">
+<!-- 			  <li><input id="all-genders" type="checkbox" name="filter-gender" data-filter="*"><label for="all-genders">All</label></a></li>
+-->			  	<li>
+					<input id="female-gender" type="checkbox" name="filter-gender" data-filter=".Female"/>
+					<label for="female-gender">Female</label>
+				</li>
+		  <li>
+			  <input id="male-gender" type="checkbox" name="filter-gender" data-filter=".Male"/>
+			  <label for="male-gender">Male</label>
+		  </li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<div class="adopt-filter-group">
+		<h5>Age</h5>
+		<ul class="filter-list" id="filters-size">
+<!-- 			  <li><input id="all-sizes" type="checkbox" name="filter-size" data-filter="*"><label for="all-sizes">All</label></a></li>
+-->		  	<li><input id="puppy-age" type="checkbox" name="filter-age" data-filter=".Puppy"/><label for="puppy-age">Puppy</label></li>
+		  	<li><input id="young-age" type="checkbox" name="filter-age" data-filter=".Young"/><label for="young-age">Young</label></li>
+		  	<li><input id="adult-age" type="checkbox" name="filter-age" data-filter=".Adult"/><label for="adult-age">Adult</label></li>
+		  	<li><input id="senior-age" type="checkbox" name="filter-age" data-filter=".Senior"/><label for="senior-age">Senior</label></li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="isotope-list">
+	{% for dog in site.data.availabletoadopt %}
+	  <div class="dog-entry {{ dog.age }} {{ dog.size }} {{ dog.gender }} {% if dog.kids %}kids{% endif %}">
+		<div class="dog-header">
+			<a href="/karma-redesign/assets/images/pets/{{ dog.image }}" rel="prettyPhoto[adopt_list]">
+				<img src="/karma-redesign/assets/images/pets/{{ dog.image }}" alt="{{ dog.name }} ({{ dog.age_detail }} {{dog.gender }} {{ dog.breed }})" />
+			</a>
+			<div class="name-text">
+				<h4 class="dog-name">{{ dog.name }}</h4>
+				<h4 class="dog-subname">{{ dog.age_detail }} {{dog.gender }} {{ dog.breed }}</h4>
+			</div>
+		</div>
+		<p class="dog-description">{{ dog.description}}</p>
+		<div class="dog-tags">
+			{% if dog.kids %}<span class="dog-tag">Good with kids</span>{% endif %}
+			<span class="dog-tag">{{ dog.training }} trained</span>
+			<span class="dog-tag">{{dog.activity}}</span>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<script type="text/javascript" src="/karma-redesign/js/jquery.prettyPhoto.js"></script>
