@@ -90,10 +90,17 @@ section {
 }
 
 #foster-program-details {
-	font-weight: 300;
-	font-size: 2.0em;
+    display: inline-block;
+    float: left;
+	font-weight: 200;
+	font-size: 1.5em;
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
     padding: 5%;
+}
+
+img, #details-video{
+    display: inline-block;
+    float: right;
 }
 
 
@@ -292,6 +299,7 @@ p.img-description{
 #details-video {
     display: block;
     margin: auto;
+    margin-right: 4.35em;
 }
 
 
