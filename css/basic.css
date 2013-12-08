@@ -91,10 +91,17 @@ section {
 }
 
 #foster-program-details {
-	font-weight: 300;
-	font-size: 2.0em;
+    display: inline-block;
+    float: left;
+	font-weight: 200;
+	font-size: 1.5em;
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
     padding: 5%;
+}
+
+img, #details-video{
+    display: inline-block;
+    float: right;
 }
 
 
@@ -313,6 +320,7 @@ p.img-description{
 #details-video {
     display: block;
     margin: auto;
+    margin-right: 4.35em;
 }
 
 
@@ -397,7 +405,30 @@ p.img-description{
     display: table-cell;
     padding:5px;
 }
- p, h1{}
+
+volunteer{
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	background-color: rgb(235, 148, 47); /* @link-color */
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.35em 5.65em;
+    margin-left: 20%;
+}
+
+finance{
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
+	background-color: rgb(235, 148, 47); /* @link-color */
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+    margin: auto;
+	padding: 0.35em 5.65em;
+}
 
 /* =Adopt
 * -------------------------------------------------*/
@@ -421,4 +452,3 @@ p.img-description{
 {
 	list-style-type:none;
 }
-
