@@ -1,83 +1,52 @@
+---
+layout: master_default
+description: Karma Rescue Adopt - Search Results page
+---
 
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
-	<meta charset="utf-8" />
-	<title>Adopt a Pet</title>
-	<link type="text/css" rel="stylesheet" href="/css/shared.css" />
-</head>
-<body>
-	<h1>Adopt a Pet</h1>
-	<h2>What kind of dog are you looking for?</h2>
+<link rel="stylesheet" href="/css/adopt.css"/>
+<h1>Search Results</h1>
 
-	<ul class="list">
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-		<li>
-			<a href="">
-				<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
-			</a>
-			<form action="" method="post"><button>Save</button></form>
-		</li>
-	</ul>
+<h3>Filters</h3>
+<div id="filter-container">
+	<div class="filter-group">
+		<label for="filters-kids">Good with kids?</label>
+		<ul class="filter-list" id="filters-kids">
+		  <li><input id="no-preference" type="radio" name="filter-kids" data-filter="*"><label for="no-preference">No Preference</label></a></li>
+		  <li><input id="good-with-kids" type="radio" name="filter-kids" data-filter=".kids"><label for="good-with-kids">Good With Kids</label></a></li>  
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<div class="filter-group">
+		<label for="filters-size">Size</label>
+		<ul class="filter-list" id="filters-size">
+		  <li><input id="all-sizes" type="radio" name="filter-size" data-filter="*"><label for="all-sizes">All</label></a></li>
+		  <li><input id="small-size" type="radio" name="filter-size" data-filter=".Small"><label for="small-size">Small</label></a></li>
+		  <li><input id="medium-size" type="radio" name="filter-size" data-filter=".Medium"><label for="medium-size">Medium</label></a></li>
+		  <li><input id="large-size" type="radio" name="filter-size" data-filter=".Large"><label for="large-size">Large</label></a></li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>	
+	<div class="filter-group">
+		<label for="filters-size">Gender</label>
+		<ul class="filter-list" id="filters-size">
+		  <li><input id="all-genders" type="radio" name="filter-gender" data-filter="*"><label for="all-genders">All</label></a></li>
+		  <li><input id="female-gender" type="radio" name="filter-gender" data-filter=".Female"><label for="female-gender">Female</label></a></li>
+		  <li><input id="male-gender" type="radio" name="filter-gender" data-filter=".Male"><label for="male-gender">Male</label></a></li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>	
+</div>
 
-</body>
-</html>
+<div class="isotope-list">
+	{% for dog in site.data.availabletoadopt %}
+	  <div class="isotope-item {{ dog.size }} {{ dog.gender }} {% if dog.kids %}kids{% endif %}">
+		<a href="">
+			<img src="http://placehold.it/200x200" width="200" height="200" alt="" />
+		</a>
+		<p>{{ dog.name }} {{ dog.breed }}</p>
+		<p>{{ dog.age }} {{dog.gender }}</p>
+		<p>{% if dog.kids %}Good with kids, {% endif %}{{ dog.training }} trained, <em>{{dog.activity}}</em></p>
+		<form action="" method="post"><button>Save</button></form>
+	</div>
+	{% endfor %}
+</div>

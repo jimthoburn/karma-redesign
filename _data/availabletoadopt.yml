@@ -1,0 +1,116 @@
+- name: Sparky
+  breed: Terrier
+  size: Small
+  kids: true
+  gender: Male
+  age: Puppy
+  activity: Sedentary
+  training: House
+
+- name: Fluffy
+  breed: Poodle
+  size: Small
+  kids: true
+  gender: Female
+  age: Puppy
+  activity: Active
+  training: Crate
+
+- name: Mr. Bigglesworth
+  breed: Bloodhound
+  size: Medium
+  kids: false
+  gender: Male
+  age: Young
+  activity: Active
+  training: House
+
+- name: John Wilkes Booth
+  breed: Terrier
+  size: Large
+  kids: false
+  gender: Female
+  age: Senior
+  activity: Sedentary
+  training: House
+
+- name: Bob
+  breed: Terrier
+  size: Small
+  kids: true
+  gender: Male
+  age: Adult
+  activity: Active
+  training: Crate
+
+- name: Stuffy
+  breed: Poodle
+  size: Small
+  kids: true
+  gender: Female
+  age: Puppy
+  activity: Active
+  training: Crate
+
+- name: Mrs. Bigglesworth
+  breed: Corgi
+  size: Medium
+  kids: true
+  gender: Female
+  age: Adult
+  activity: Sedentary
+  training: House
+
+- name: Abraham Lincoln
+  breed: Terrier
+  size: Medium
+  kids: true
+  gender: Male
+  age: Adult
+  activity: Active
+  training: House
+
+- name: Alice
+  breed: English Bulldog
+  size: Small
+  kids: true
+  gender: Female
+  age: Young
+  activity: Sedentary
+  training: House
+
+- name: Bandit
+  breed: Dachsund
+  size: Small
+  kids: true
+  gender: Male
+  age: Adult
+  activity: Sedentary
+  training: Crate
+
+- name: Bonnie
+  breed: Pit Bull
+  size: Large
+  kids: false
+  gender: Female
+  age: Young
+  activity: Active
+  training: House
+
+- name: Freddy
+  breed: English Terrier
+  size: Medium
+  kids: true
+  gender: Male
+  age: Young
+  activity: Sedentary
+  training: House
+
+- name: Ol' Bill
+  breed: Poodle
+  size: Small
+  kids: true
+  gender: Male
+  age: Senior
+  activity: Sedentary
+  training: House
