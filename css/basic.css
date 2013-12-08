@@ -376,7 +376,6 @@ p.img-description{
     display: table-cell;
     padding:5px;
 }
-<<<<<<< HEAD
 
 volunteer{
 	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; /* @oswald */
@@ -401,8 +400,6 @@ finance{
     margin: auto;
 	padding: 0.35em 5.65em;
 }
-=======
- p, h1{}
 
 /* =Adopt
 * -------------------------------------------------*/
@@ -426,5 +423,3 @@ finance{
 {
 	list-style-type:none;
 }
-
->>>>>>> 3fe6e402fbc5f794dba733112be35062a42c4c8f
